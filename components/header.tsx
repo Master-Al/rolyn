@@ -39,22 +39,22 @@ export default function Header() {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/services" passHref>
+                    <Link href="/Services" passHref>
                       <a className={`nav-link `}>Services</a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/portfolio" passHref>
+                    <Link href="/Portfolio" passHref>
                       <a className={`nav-link `}>Portfolio</a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/clients" passHref>
+                    <Link href="/Clients" passHref>
                       <a className={`nav-link `}>Clients</a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/getqoute" passHref>
+                    <Link href="/Getqoute" passHref>
                       <a className={`nav-link `}>Get A Qoute</a>
                     </Link>
                   </li>

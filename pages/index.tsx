@@ -19,7 +19,9 @@ export default function Home() {
         <div className="container">
           <div className={`row ${styles.rows}`}>
             <div className={`col`}>
-              <div className={styles.QuestionRolyn}>Hey! What's Rolyn?</div>
+              <div className={styles.QuestionRolyn}>
+                Hey! What&rsquo;s Rolyn?
+              </div>
               <div className={styles.QuestionMobile}>
                 Do you have a <br /> Mobile Application Idea?
               </div>

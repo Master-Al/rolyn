@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/layout";
+import Typist from "react-typist";
 
 export default function Home() {
   return (
@@ -19,17 +20,29 @@ export default function Home() {
         <div className="container">
           <div className={`row ${styles.rows}`}>
             <div className={`col`}>
-              <div className={styles.QuestionRolyn}>
-                Hey! What&rsquo;s Rolyn?
-              </div>
-              <div className={styles.QuestionMobile}>
-                Do you have a <br /> Mobile Application Idea?
-              </div>
-              <div className={styles.paragraph}>
-                We can help you built it! Turn your imagination and ideas into{" "}
-                <br />
-                reality. Check us out and Message us!
-              </div>
+              <Typist
+                className="MyTypist"
+                cursor={{
+                  show: false,
+                  blink: true,
+                  element: "|",
+                  hideWhenDone: true,
+                  hideWhenDoneDelay: 100,
+                }}
+              >
+                <div className={styles.QuestionRolyn}>
+                  Hey! What&rsquo;s Rolyn? Do you have
+                </div>
+                <Typist.Backspace count={11} delay={200} />
+                <div className={styles.QuestionMobile}>
+                  Do you have a <br /> Mobile Application Idea?
+                </div>
+                <div className={styles.paragraph}>
+                  We can help you built it! Turn your imagination and ideas into{" "}
+                  <br />
+                  reality. Check us out and Message us!
+                </div>
+              </Typist>
               <button
                 type="button"
                 className={`btn btn-primary ${styles.bordered}`}
@@ -37,6 +50,7 @@ export default function Home() {
                 Get a Qoute
               </button>
             </div>
+
             <div className="col">
               <div className="row">
                 <div className="col">image</div>

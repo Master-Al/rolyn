@@ -1,18 +1,20 @@
 import React from "react";
 import Link from "next/link";
-
+import Image from "next/image";
+import companyLogo from "../public/rolyn.png";
+import { Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
 export default function Header() {
   return (
     <div className={`container-fluid fixed-top`}>
       <div className="container padds">
         <div className="row justify-content-md-center ">
-          <div className="col-md-10">
-            <nav
+          <div className="col-md-12">
+            {/* <nav
               className="navbar navbar-expand-lg navbar-light"
               style={{ padding: "0px" }}
             >
               <a className="navbar-brand" href="#">
-                <img src="/vercel.svg" alt="logo" className="logo" />
+                <Image src={companyLogo} alt="Rolyn" />
               </a>
               <button
                 className="navbar-toggler"
@@ -60,7 +62,58 @@ export default function Header() {
                   </li>
                 </ul>
               </div>
-            </nav>
+            </nav> */}
+            <Navbar collapseOnSelect expand="xl">
+              <Container>
+                <Navbar.Brand href="/">
+                  <Image src={companyLogo} alt="Rolyn" />
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                  <Nav className="me-auto">
+                    {/* <Nav.Link href="#features">Features</Nav.Link>
+                    <Nav.Link href="#pricing">Pricing</Nav.Link>
+                    <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.1">
+                        Action
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">
+                        Another action
+                      </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.3">
+                        Something
+                      </NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#action/3.4">
+                        Separated link
+                      </NavDropdown.Item>
+                    </NavDropdown> */}
+                  </Nav>
+                  <Nav>
+                    <Nav.Link href="/Services">
+                      <span style={{ color: "#fffff" }}>More deets</span>
+                    </Nav.Link>
+                    <Nav.Link
+                      eventKey={2}
+                      href="#memes"
+                      className={`nav-link `}
+                    >
+                      Dank memes
+                    </Nav.Link>
+                    <Nav.Link href="#deets" className={`nav-link `}>
+                      More deets
+                    </Nav.Link>
+                    <Nav.Link
+                      eventKey={2}
+                      href="#memes"
+                      className={`nav-link `}
+                    >
+                      Dank memes
+                    </Nav.Link>
+                  </Nav>
+                </Navbar.Collapse>
+              </Container>
+            </Navbar>
           </div>
         </div>
       </div>

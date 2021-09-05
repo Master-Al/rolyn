@@ -3,8 +3,8 @@
   padding: 2rem;
   background: linear-gradient(
       to right top,
-      #ffdead 10% /*top-left color*/,
-      #353839 104% /*bottom-right color*/
+      #eecc91 10% /*top-left color*/,
+      #2a2a2a 90% /*bottom-right color*/
     ),
     linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))
       /*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
@@ -18,10 +18,10 @@
   width: 120vh;
   height: 120vh;
   border-radius: 120vh;
-  opacity: 0.5;
+  opacity: 0.9;
   left: -5%;
   top: -45%;
-  background-color: #000000;
+  background-color: #242424;
   transition: 0.4s ease;
 }
 .BootomOverlay {
@@ -32,12 +32,12 @@
   opacity: 0.5;
   left: 50%;
   top: 20%;
-  background-color: #ffebcd;
+  background-color: #eecc91;
   transition: 0.4s ease;
 }
 .iconBar {
   position: absolute;
-  background-color: #695d4a;
+  background-color: #242424;
   padding: 10px 10px 10px 10px;
   left: 0%;
   top: 50%;

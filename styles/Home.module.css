@@ -1,15 +1,10 @@
 .container {
   min-height: 100vh;
-  padding: 100px 0;
-  margin: 100px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 0 16%;
   align-items: center;
-  height: 100vh;
 }
 .rows {
-  padding-top: 8%;
+  padding-top: 12%;
 }
 .QuestionRolyn {
   color: #c9cfd4;
@@ -29,120 +24,103 @@
   line-height: 180%;
 }
 .bordered {
-  margin-top: 2%;
+  margin-top: 2% !important;
   background-color: #3396e8;
   border-radius: 100px;
-  width: 8rem;
-  box-shadow: 3px 10px 40px #5d7c94;
+  border-color: transparent !important;
+  color: black;
+  font-weight: 500;
+  height: 30px !important;
+  width: 10rem;
+  box-shadow: 5px 10px 60px #5d7c94;
 }
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.textarea {
+  min-height: 220px !important;
+  display: block !important;
 }
-
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-.card h2 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+/* smallphone */
+@media only screen and (max-width: 280px) {
+  .QuestionRolyn {
+    color: #c9cfd4;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 200%;
+    text-align: center !important;
   }
+  .QuestionMobile {
+    color: #c9cfd4;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: center !important;
+  }
+  .paragraph {
+    color: #c9cfd4;
+    font-size: 16px;
+    line-height: 180%;
+    text-align: center !important;
+  }
+  .bordered {
+    margin: 0 auto !important;
+    display: block !important;
+    text-align: center !important;
+    background-color: #3396e8;
+    border-radius: 100px;
+    border-color: transparent !important;
+    color: black;
+    font-weight: 500;
+    height: 30px !important;
+    width: 10rem;
+    box-shadow: 5px 10px 60px #5d7c94;
+  }
+  .textarea {
+    min-height: 170px !important;
+    display: block !important;
+  }
+}
+/* Phone */
+@media only screen and (max-width: 483px) {
+  .QuestionRolyn {
+    color: #c9cfd4;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    text-align: center !important;
+  }
+  .QuestionMobile {
+    color: #c9cfd4;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center !important;
+  }
+  .paragraph {
+    color: #c9cfd4;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center !important;
+  }
+  .bordered {
+    margin: 0 auto !important;
+    display: block !important;
+    text-align: center !important;
+    background-color: #3396e8;
+    border-radius: 100px;
+    border-color: transparent !important;
+    color: black;
+    font-weight: 500;
+    height: 30px !important;
+    width: 10rem;
+    box-shadow: 5px 10px 60px #5d7c94;
+  }
+  .textarea {
+    min-height: 170px !important;
+    display: block !important;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 768px) {
+}
+/* Small screens eg: laptop*/
+@media only screen and (max-width: 1024px) {
 }

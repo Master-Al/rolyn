@@ -6,7 +6,7 @@ import Head from "next/head";
 
 export default function Layout({ children }) {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <link rel="shortcut icon" href="/favicon.ico" />
         <title>Rolyn</title>
@@ -31,49 +31,46 @@ export default function Layout({ children }) {
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
-      {/* Top */}
-
-      <div className={styles.TopCircle}>
+      <div className={styles.containers}>
+        {/* Top */}
         <div className={styles.TopOverlay} />
-      </div>
-      <Header />
-      <div className={styles.iconBar}>
-        <ul className="navbar-nav ml-auto">
-          <li className="nav-item">
-            <a href="#">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#">
-              <i className="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#">
-              <i className="fab fa-github"></i>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a href="#">
-              <i className="fab fa-youtube"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-      {children}
-      {/* Bottom */}
-      <div className={styles.BootomCircle}>
+        <Header />
+        {/* <div className={styles.iconBar}>
+          <ul className="navbar-nav ml-auto">
+            <li className="nav-item">
+              <a href="#">
+                <i className="fab fa-facebook-f"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#">
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#">
+                <i className="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#">
+                <i className="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#">
+                <i className="fab fa-github"></i>
+              </a>
+            </li>
+            <li className="nav-item">
+              <a href="#">
+                <i className="fab fa-youtube"></i>
+              </a>
+            </li>
+          </ul>
+        </div> */}
+        {children}
+        {/* Bottom */}
         <div className={styles.BootomOverlay} />
       </div>
     </div>

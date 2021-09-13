@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Layout from "../components/layout";
 import Typist from "react-typist";
+import { Row, Col } from "react-bootstrap";
 
 export default function Home() {
   return (
@@ -17,47 +18,46 @@ export default function Home() {
           <link rel="icon" href="/rolyn.png" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
         </Head>
-        <div className="container">
-          <div className={`row ${styles.rows}`}>
-            <div className={`col`}>
-              <Typist
-                className="MyTypist"
-                cursor={{
-                  show: false,
-                  blink: true,
-                  element: "|",
-                  hideWhenDone: true,
-                  hideWhenDoneDelay: 100,
-                }}
-              >
-                <div className={styles.QuestionRolyn}>
-                  Hey! What&rsquo;s Rolyn? Do you have
-                </div>
-                <Typist.Backspace count={11} delay={200} />
-                <div className={styles.QuestionMobile}>
-                  Do you have a <br /> Mobile Application Idea?
-                </div>
-                <div className={styles.paragraph}>
-                  We can help you built it! Turn your imagination and ideas into{" "}
-                  <br />
-                  reality. Check us out and Message us!
-                </div>
-              </Typist>
-              <button
-                type="button"
-                className={`btn btn-primary ${styles.bordered}`}
-              >
-                Get a Qoute
-              </button>
-            </div>
-
-            <div className="col">
-              <div className="row">
-                <div className="col">image</div>
-                <div className="col">Content</div>
+        <div className={styles.container}>
+          <Row className={styles.rows}>
+            <Col sm={6}>
+              <div className={styles.textarea}>
+                <Typist
+                  className="MyTypist"
+                  cursor={{
+                    show: false,
+                    blink: true,
+                    element: "|",
+                    hideWhenDone: true,
+                    hideWhenDoneDelay: 100,
+                  }}
+                >
+                  <div className={styles.QuestionRolyn}>
+                    Hey! What&rsquo;s Rolyn? Do you have
+                  </div>
+                  <Typist.Backspace count={11} delay={200} />
+                  <div className={styles.QuestionMobile}>
+                    Do you have a <br /> Mobile Application Idea?
+                  </div>
+                  <div className={styles.paragraph}>
+                    We can help you built it! Turn your imagination and ideas
+                    into <br />
+                    reality. Check us out and Message us!
+                  </div>
+                </Typist>
               </div>
-            </div>
-          </div>
+              <button className={styles.bordered}>Get a Qoute</button>
+            </Col>
+
+            <Col sm={6}>
+              <Row>
+                <Col>image</Col>
+                <Col>
+                  Content <br /> Content <br /> Content
+                </Col>
+              </Row>
+            </Col>
+          </Row>
         </div>
       </Layout>
     </div>

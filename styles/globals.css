@@ -4,8 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  /* overflow-x: hidden !important; */
 }
 
 a {
@@ -20,60 +19,6 @@ a {
   font-size: 32px;
   color: white;
 }
-@media (min-width: 768px) {
-  .navbar-expand-md {
-    padding: 0px !important;
-  }
-}
-.padds {
-  padding-top: 5vh !important;
-}
-.logo {
-  width: 40px !important;
-}
-.navbar-default {
-  background-color: transparent !important;
-  border-bottom: 1px solid #ffffff !important;
-  -webkit-transition: background-color 1s !important;
-  transition: background-color 1s !important;
-}
-.navbar-default-active,
-.navbar-default:hover {
-  background-color: #191d21 !important;
-  border-bottom: 0px solid #ffffff !important;
-  -webkit-transition: background-color 1s !important;
-  transition: background-color 1s !important;
-}
-.navbar-nav > li.nav-item > a.nav-link,
-.navbar-nav > li.nav-item > a.nav-link:focus {
-  color: #ffffff;
-  padding: 15px;
-}
-.navbar-nav > li > a {
-  font-size: 13px;
-  font-weight: normal;
-}
-.navbar-nav > li > a.active,
-.navbar-nav > li > a:hover {
-  color: #ffffff !important;
-  border-bottom: 1px solid #ffffff;
-  background-color: transparent !important;
-}
-.navbar-nav > li > a.space:hover {
-  border-bottom: none;
-}
-.space {
-  display: inline-block !important;
-  width: 80px !important;
-}
-@media (min-width: 100px) and (max-width: 992px) {
-  .navbar-nav {
-    display: inline-block !important;
-    float: none !important;
-    vertical-align: top !important;
-  }
-
-  .navbar .navbar-collapse {
-    text-align: center !important;
-  }
+.navbar-dark .navbar-toggler {
+  border-color: transparent !important;
 }

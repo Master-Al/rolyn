@@ -6,9 +6,9 @@ import styles from "./style.module.css";
 
 export default function ComingSoon() {
   return (
-    <div>
-      <div className={styles.comingsoon}>
-        <div className={styles.comingsoonText}>We are comming soon </div>
+    <div className={styles.comingsoon}>
+      <div className={styles.comingsoonContent}>
+        <div className={styles.comingsoonText}>We are coming soon </div>
         <p className={styles.comingsoondesc}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry`&rsquo;`s standard dummy

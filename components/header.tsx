@@ -21,8 +21,8 @@ export default function Header() {
                 <Nav.Link eventKey={2} href="/portfolio">
                   Portfolio
                 </Nav.Link>
-                <Nav.Link href="/Clients">Clients</Nav.Link>
-                <Nav.Link eventKey={2} href="/Getqoute">
+                <Nav.Link href="/clients">Clients</Nav.Link>
+                <Nav.Link eventKey={2} href="/getqoute">
                   Get A Qoute
                 </Nav.Link>
               </Nav>
